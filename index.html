@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Next Train</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+</head>
+<body>
+
+
+
+  <div data-role="page" id="index">
+
+    <div data-role="panel" id="settings" data-display="reveal">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#">Register</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Add City</a></li>
+      <li><a href="#">Add Routes</a></li>
+
+    </div>
+
+     <header data-role="header" data-add-back-btn="true">
+         <h1>Next Train</h1>
+     </header>
+
+     <div data-role="main" class="ui-content">
+        <div class=add-border>
+        <h3>Please Login to save your route options.</h3>
+        <form>
+             <label for="user_name">User Name:</label>
+             <input type="text" name="user_name" id="user_name" value="">
+             <label for="password">Password</label>
+             <input type="text" data-clear-btn="true" name="password" id="password" value="">
+             <button class="ui-btn ui-corner-all" autofocus="autofocus">Login</button>
+        </form>
+      </div>
+        <button class="ui-btn ui-corner-all">Continue as Guest</button>
+     </div>
+
+     <footer data-role="footer" data-position="fixed">
+       <header data-role="header">
+           <h2>Created by Pranali</h2>
+       </header>
+     </footer>
+ </div>
+
+
+ <div data-role="page" id="login">
+     <header data-role="header">
+         <h1>Enter your details</h1>
+
+     </header>
+
+     <div data-role="content">
+         <p>just some extra content as well.</p>
+         <p>I mean, you can <a data-rel="back" href="#index">go back</a> at any time.</p>
+     </div>
+ </div>
+</body>
+</html>
